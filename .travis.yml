@@ -15,9 +15,13 @@ script:
 #script: ./vendor/bin/phpunit
 
 notifications:
-  email: false
+  #  email: false
+  email:
+    recipients:
+      - tunglt@ominext.com
 #    - tunglt@ominext.com
 
 branches:
   only:
     - master
+    - /^deploy-.*$/
