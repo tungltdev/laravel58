@@ -10,15 +10,14 @@ before_script:
   - bash setting.sh
 
 script:
+  #coding_convention:
   ./vendor/squizlabs/php_codesniffer/bin/phpcs --standard=PSR2 app/ routes/ config/
 #script: ./vendor/bin/phpunit
 
 notifications:
   email: false
-#notifications:
-#  email:
 #    - tunglt@ominext.com
 
-#coding_convention:
-#  script:
-#    - vendor/squizlabs/php_codesniffer/bin/phpcs --standard=PSR2 app/ routes/ config/ tests/ database/
+branches:
+  only:
+    - master
