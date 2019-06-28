@@ -12,6 +12,6 @@ before_script:
 #script: ./vendor/bin/phpunit
 
 notifications:
-email:
-  - tunglt@ominext.com
+  email:
+    - tunglt@ominext.com
 
