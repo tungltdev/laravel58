@@ -1,3 +1,4 @@
 cp .env.example .env;
-composer install;
+composer self-update
+composer install --no-interaction
 php artisan key:generate;

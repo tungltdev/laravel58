@@ -1,7 +1,20 @@
 language: php
 php:
   - 7.3
+#sudo: required
+cache:
+  directories:
+    - node_modules
+    - vendor
 before_script:
   - bash setting.sh
 
 #script: ./vendor/bin/phpunit
+
+notifications:
+email:
+  recipients:
+    - tunglt@ominext.com
+  on_success: always
+  on_failure: always
+
