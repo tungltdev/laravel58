@@ -10,7 +10,7 @@ before_script:
   - bash setting.sh
 
 script:
-  - vendor/squizlabs/php_codesniffer/bin/phpcs --standard=PSR2 app/ routes/ config/ tests/ database/
+  ./vendor/squizlabs/php_codesniffer/bin/phpcs --standard=PSR2 app/ routes/ config/ tests/ database/
 #script: ./vendor/bin/phpunit
 
 notifications:
