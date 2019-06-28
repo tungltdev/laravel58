@@ -13,8 +13,5 @@ before_script:
 
 notifications:
 email:
-  recipients:
-    - tunglt@ominext.com
-  on_success: always
-  on_failure: always
+  - tunglt@ominext.com
 
